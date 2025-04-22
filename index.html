@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMK AL SAFITRI BUTON SELATAN</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/lain.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigasi -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <img src="img/logo.png" alt="Logo STMIK" class="logo" />
+                <h1 class="brand">SMK</h1>
+                <span class="subtitle">AL SAFITRI BUTON SELATAN</span>
+            </div>
+            <nav class="navbar-right">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="active">Beranda</a></li>
+                    <li class="dropdown" onclick="toggleDropdown(this)">
+                        <a href="#">Profil ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/profil.html">Profil</a></li>
+                            <li><a href="/pages/guru.html">Tenaga Pengajar</a></li>
+                            <li><a href="/pages/visi.html">Visi & Misi</a></li>
+                            <li><a href="#">Struktur Organisasi</a></li>
+                            <li><a href="#">Jurusan</a></li>
+                            <li><a href="#">Fasilitas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Artikel</a></li>
+                    <li class="dropdown" onclick="toggleDropdown(this)">
+                        <a href="#">Informasi ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Pengumuman</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="#prestasi">Prestasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="/pages/login.html" class="login-btn">Login ➞</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Section: Home -->
+
+    <section id="home">
+        <img src="" alt="">
+        <h2>Selamat Datang di SMK AL Safitri Buton Selatan</h2>
+        <div class="slider">
+            <button class="prev" onclick="showPrev()">&#10094;</button>
+            <img id="slide-img" src="img/slide1.jpg" alt="Slide Gambar" />
+            <button class="next" onclick="showNext()">&#10095;</button>
+        </div>
+    </section>
+
+
+    <section id="layanan">
+        <span class="garis"></span>
+        <H2 class="layanan">Fitur Layanan</H2>
+        <div class="layanan-container">
+
+            <div class="layanan-item">
+                <img src="img/Download-new.png" alt="Download">
+                <a href="#">
+                    <p>Download</p>
+                </a>
+            </div>
+            <div class="layanan-item">
+                <img src="img/PMB.png" alt="SiPSB">
+                <a href="#">
+                    <p>SiPSB</p>
+                </a>
+            </div>
+            <div class="layanan-item">
+                <img src="img/Visi-misi-new.png" alt="Visi dan Misi">
+                <a href="pages/visi.html">
+                    <p>Visi dan Misi</p>
+                </a>
+            </div>
+            <div class="layanan-item">
+                <img src="img/Sambutan-New.png" alt="Sambutan">
+                <a href="/pages/sambutan.html">
+                    <p>Sambutan</p>
+                </a>
+            </div>
+            <div class="layanan-item">
+                <img src="img/Agenda-New.png" alt="Agenda">
+                <a href="#">
+                    <p>Agenda</p>
+                </a>
+            </div>
+            <div class="layanan-item">
+                <img src="img/Pengumuman-New.png" alt="Pengumuman">
+                <a href="#">
+                    <p>Pengumuman</p>
+                </a>
+            </div>
+        </div>
+        <span class="garis"></span>
+    </section>
+
+
+    <!-- Section: About -->
+    <section id="about" class="about">
+        <div class="about">
+
+            <h2 class="title">Tentang Kami</h2>
+            <p> AL SAFITRI merupakan salah satu sekolah jenjang SMK berstatus Swasta yang berada di wilayah
+                Kec. Batauga, Kab. Buton Selatan, Sulawesi Tenggara. SMKS AL SAFITRI didirikan pada tanggal 3
+                Februari 2009 dengan Nomor SK Pendirian AHU-979.AH.01.04 yang berada dalam naungan Kementerian
+                Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 177 siswa ini
+                dibimbing oleh 30 guru yang profesional di bidangnya. Kepala Sekolah SMKS AL SAFITRI saat ini
+                adalah Hertina. Operator yang bertanggung jawab adalah Siti Rahma.<br><br>
+
+                Dengan adanya keberadaan SMKS AL SAFITRI, diharapkan dapat memberikan kontribusi dalam
+                mencerdaskan anak bangsa di wilayah Kec. Batauga, Kab. Buton Selatan.</p>
+
+
+            <p>Akreditasi dan Sertifikasi SMKS AL SAFITRI
+                Sekolah ini telah terakreditasi B dengan Nomor SK Akreditasi 994/BAN-SM/SK/2021 pada tanggal 15 Oktober
+                2021.</p>
+            <span class="garis"></span>
+        </div>
+    </section>
+
+    <!-- Section: Galeri -->
+    <section id="galeri" class="galeri-section">
+        <div class="container">
+            <h2 class="section-title">Galeri Sekolah</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/slide1.jpg" alt="Foto 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/slide2.jpg" alt="Foto 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/slide3.jpg" alt="Foto 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/slide4.jpg" alt="Foto 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/slide5.jpg" alt="Foto 5">
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="img/slide6.jpg" alt="Foto 5">
+                </div> -->
+            </div>
+        </div>
+        <span class="garis"></span>
+    </section>
+
+
+    <!-- Section: Prestasi -->
+    <section id="prestasi">
+        <h2 class="title">Prestasi Sekolah</h2>
+        <ul>
+            <li>Juara 1 Lomba Drama tingkat Kabupaten - 2014</li>
+            <li>....</li>
+            <li>...</li>
+        </ul>
+        <span class="garis"></span>
+    </section>
+
+    <!-- Section: Testimoni -->
+    <section id="testimoni">
+        <h2 class="title">Testimoni Alumni</h2>
+        <blockquote>
+            "Saya bangga pernah bersekolah di SMK AL SAFITRI BUTON SELATAN. Guru-gurunya inspiratif dan suasana
+            belajarnya
+            menyenangkan."
+            <br /><strong>- Rahmat, Alumni 2016</strong>
+        </blockquote>
+        <blockquote>
+            "Bekal dari SMK AL SAFITRI BUTON SELATAN membuat saya siap bersaing di jenjang pendidikan selanjutnya."
+            <br /><strong>- Norayati, Alumni 2016</strong>
+        </blockquote>
+        <span class="garis"></span>
+    </section>
+
+    <!-- Section: Kontak -->
+    <section id="kontak" class="kontak-smk">
+        <h2 class="title">Kontak Kami</h2>
+        <table>
+            <tr>
+                <th>Alamat</th>
+                <td>Jln Gajah Mada Batauga Buton Selatan</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td> smkalsafitributonselatan@yahoo.com</td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>https://smkalsafitri.vercel.app/</td>
+            </tr>
+        </table>
+        <span class="garis"></span>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SMK AL SAFITRI BUTON SELATAN. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("show");
+        }
+
+        function toggleDropdown(el) {
+            if (window.innerWidth <= 768) {
+                el.classList.toggle("active");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
